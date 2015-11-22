@@ -1,0 +1,37 @@
+---
+title: "Slidify_Play"
+author: "Robert Hadow"
+date: "November 16, 2015"
+output: html_document
+---
+
+This is an R Markdown document. 
+
+```{r preprocess}
+suppressPackageStartupMessages(library(devtools))
+suppressPackageStartupMessages(library(stringi))
+suppressPackageStartupMessages(library(knitr))
+
+
+# install_github('ramnathv/slidify')
+# install_github('ramnathv/slidifyLibraries')
+
+
+suppressPackageStartupMessages(library(slidify))
+
+#author("slidify_project")
+
+slidify('index.Rmd')
+
+browseURL('index.html')
+
+#file.copy('slidify_project/index.html', 'tree/gh-pages')
+
+
+#origwd <- getwd()
+setwd('slidify_project')
+#publish(user = "roberthadow", repo = "roberthadow/devdataprod")
+#setwd(origwd)
+setwd("~/Hadow/Clients/JHU-DST/repo/devdataprod")
+
+```
