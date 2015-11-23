@@ -19,7 +19,7 @@ suppressPackageStartupMessages(library(knitr))
 
 suppressPackageStartupMessages(library(slidify))
 
-#author("slidify_project")
+author("slidify_project")
 
 slidify('index.Rmd')
 
