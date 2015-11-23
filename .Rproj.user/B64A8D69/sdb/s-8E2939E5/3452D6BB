@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle: \"Slidify_Play\"\nauthor: \"Robert Hadow\"\ndate: \"November 16, 2015\"\noutput: html_document\n---\n\nThis is an R Markdown document. \n\n```{r preprocess}\nsuppressPackageStartupMessages(library(devtools))\nsuppressPackageStartupMessages(library(stringi))\nsuppressPackageStartupMessages(library(knitr))\n\n\n# install_github('ramnathv/slidify')\n# install_github('ramnathv/slidifyLibraries')\n\n\nsuppressPackageStartupMessages(library(slidify))\n\n#author(\"slidify_project\")\n\nslidify('index.Rmd')\n\nbrowseURL('index.html')\n\n#file.copy('slidify_project/index.html', 'tree/gh-pages')\n\n\n#origwd <- getwd()\nsetwd('slidify_project')\n#publish(user = \"roberthadow\", repo = \"roberthadow/devdataprod\")\n#setwd(origwd)\nsetwd(\"~/Hadow/Clients/JHU-DST/repo/devdataprod\")\n\n```\n",
+    "created" : 1448233903606.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2621615956",
+    "id" : "3452D6BB",
+    "lastKnownWriteTime" : 1448284572,
+    "path" : "~/Hadow/Clients/JHU-DST/repo/Medical_Test/Slidify_Utilities.Rmd",
+    "project_path" : "Slidify_Utilities.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}
